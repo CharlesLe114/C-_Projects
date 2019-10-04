@@ -51,7 +51,6 @@ int main(){
     }
     quickSort(executingArray,0,n-1);
     int minNumberindex=-1, middleNumberindex=-1, maxNumberindex=-1;
-    int x=n/2;
     for (int i = 0; i < n; i++)
     {
         if (inputArray[i] == executingArray[0]){
@@ -59,7 +58,7 @@ int main(){
             continue;
         }
         else 
-            if (inputArray[i] == executingArray[x])
+            if (inputArray[i] == executingArray[n/2])
             {
                 middleNumberindex=i+1;
                 continue;
